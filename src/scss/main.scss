@@ -50,6 +50,23 @@ body {
       @include vertical-align();
       text-align: center;
 
+      .note-pic {
+        display: block;
+        max-width: 200px;
+        width: 200px;
+        height: 200px;
+        border-radius: 1000px;
+        overflow: hidden;
+        background-image: url('/dist/images/profile.jpg');
+        background-color: $black;
+        border: 8px solid $black;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+        margin: 2rem auto;
+      }
+
       p {
         margin-bottom: .5rem;
       }
@@ -81,6 +98,15 @@ body {
         margin-top: 2rem;
         font-family: courier;
         font-style: italic;
+      }
+
+      .button {
+        &:hover,
+        &:active,
+        &:focus {
+          background: #000;
+          color:  #fff;
+        }
       }
     }
   }
