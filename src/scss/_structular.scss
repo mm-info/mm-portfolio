@@ -43,6 +43,8 @@ main {
   &.Grid-nowrap                     { flex-flow: row nowrap; > * { flex-grow: 1; flex-shrink: 1; flex-basis: auto; } }
   &.Grid-column                     { flex-flow: column;     > * { flex: none;  width: 100%; } }
 
+  &.Grid-align__center                   { align-items: center; }
+
   > *,
   .Grid-cell {
     box-sizing: border-box;
@@ -61,7 +63,24 @@ main {
     &.Grid-cell__11of12                    { width: calc(91.6666667% - 0rem); }
     &.Grid-cell__12of12                    { width: calc(100.000000% - 0rem); }
 
+    // Hiding
     &.Grid-cell__hide                      { display: none; }
+
+    // Re-ordering
+    &.Grid-cell__reorder-first,
+    &.Grid-cell__reorder-1                 {order: 1;  }
+    &.Grid-cell__reorder-2                 {order: 2;  }
+    &.Grid-cell__reorder-3                 {order: 3;  }
+    &.Grid-cell__reorder-4                 {order: 4;  }
+    &.Grid-cell__reorder-5                 {order: 5;  }
+    &.Grid-cell__reorder-6                 {order: 6;  }
+    &.Grid-cell__reorder-7                 {order: 7;  }
+    &.Grid-cell__reorder-8                 {order: 8;  }
+    &.Grid-cell__reorder-9                 {order: 9;  }
+    &.Grid-cell__reorder-10                {order: 10; }
+    &.Grid-cell__reorder-11                {order: 11; }
+    &.Grid-cell__reorder-12,
+    &.Grid-cell__reorder-last              {order: 12; }
   }
 }
 
@@ -71,6 +90,8 @@ main {
     &.Grid-wrap--md                       { flex-flow: row wrap;   > * { flex-grow: 1; flex-shrink: 0; flex-basis: auto; } }
     &.Grid-nowrap--md                     { flex-flow: row nowrap; > * { flex-grow: 1; flex-shrink: 1; flex-basis: auto; } }
     &.Grid-column--md                     { flex-flow: column;     > * { flex: none;  width: 100%; } }
+
+    &.Grid-align__center--md            { align-items: center; }
 
     > *,
     .Grid-cell {
@@ -90,7 +111,24 @@ main {
       &.Grid-cell__11of12--md             { width: calc(91.6666667% - 0rem); }
       &.Grid-cell__12of12--md             { width: calc(100.000000% - 0rem); }
 
+      // Hiding
       &.Grid-cell__hide--md               { display: none; }
+
+      // Re-ordering
+      &.Grid-cell__reorder-first--md,
+      &.Grid-cell__reorder-1--md              {order: 1;  }
+      &.Grid-cell__reorder-2--md              {order: 2;  }
+      &.Grid-cell__reorder-3--md              {order: 3;  }
+      &.Grid-cell__reorder-4--md              {order: 4;  }
+      &.Grid-cell__reorder-5--md              {order: 5;  }
+      &.Grid-cell__reorder-6--md              {order: 6;  }
+      &.Grid-cell__reorder-7--md              {order: 7;  }
+      &.Grid-cell__reorder-8--md              {order: 8;  }
+      &.Grid-cell__reorder-9--md              {order: 9;  }
+      &.Grid-cell__reorder-10--md             {order: 10; }
+      &.Grid-cell__reorder-11--md             {order: 11; }
+      &.Grid-cell__reorder-12--md,
+      &.Grid-cell__reorder-last--md           {order: 12; }
     }
   }
 }
@@ -100,6 +138,8 @@ main {
     &.Grid-wrap--sm                       { flex-flow: row wrap;   > * { flex-grow: 1; flex-shrink: 0; flex-basis: auto; } }
     &.Grid-nowrap--sm                     { flex-flow: row nowrap; > * { flex-grow: 1; flex-shrink: 1; flex-basis: auto; } }
     &.Grid-column--sm                     { flex-flow: column;     > * { flex: none;  width: 100%; } }
+
+    &.Grid-align__center--sm            { align-items: center; }
 
     > *,
     .Grid-cell {
@@ -119,7 +159,24 @@ main {
       &.Grid-cell__11of12--sm             { width: calc(91.6666667% - 0rem); }
       &.Grid-cell__12of12--sm             { width: calc(100.000000% - 0rem); }
 
+      // Hiding
       &.Grid-cell__hide--sm               { display: none; }
+
+      // Re-ordering
+      &.Grid-cell__reorder-first--sm,
+      &.Grid-cell__reorder-1--sm              {order: 1;  }
+      &.Grid-cell__reorder-2--sm              {order: 2;  }
+      &.Grid-cell__reorder-3--sm              {order: 3;  }
+      &.Grid-cell__reorder-4--sm              {order: 4;  }
+      &.Grid-cell__reorder-5--sm              {order: 5;  }
+      &.Grid-cell__reorder-6--sm              {order: 6;  }
+      &.Grid-cell__reorder-7--sm              {order: 7;  }
+      &.Grid-cell__reorder-8--sm              {order: 8;  }
+      &.Grid-cell__reorder-9--sm              {order: 9;  }
+      &.Grid-cell__reorder-10--sm             {order: 10; }
+      &.Grid-cell__reorder-11--sm             {order: 11; }
+      &.Grid-cell__reorder-12--sm,
+      &.Grid-cell__reorder-last--sm           {order: 12; }
     }
   }
 }

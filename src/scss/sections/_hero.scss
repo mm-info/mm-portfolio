@@ -50,28 +50,6 @@
           margin-bottom: .5rem;
         }
 
-        // .rule {
-        //   background: $black;
-        //   height: .5rem;
-        //   width: calc(100% + 5rem);
-        //   display: block;
-        //   position: relative;
-        //   left: -6.25rem;
-        //   z-index: 0;
-        //   margin-bottom: .5rem;
-        //
-        //   &::after {
-        //     content: '';
-        //     position: absolute;
-        //     right: -1rem;
-        //     background: $black;
-        //     height: 2rem;
-        //     width: 2rem;
-        //     border-radius: 100px;
-        //     top: -.75rem;
-        //   }
-        // }
-
         h2 {
           margin: 0;
           text-align: left;
@@ -79,6 +57,33 @@
           line-height: 1.6;
           font-weight: $light;
           color: $black;
+        }
+      }
+
+      @include small-and-down {
+        flex-flow: column;
+        padding: 0;
+
+        .profile-picture {
+          width: 12rem;
+          height: 12rem;
+          margin: 0 auto;
+          border-width: 4px;
+        }
+
+        .profile-copy {
+          padding-left: 0;
+
+          h1 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+          }
+
+          h2 {
+            font-size: 1.375rem;
+            text-align: center;
+          }
         }
       }
     }

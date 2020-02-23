@@ -2,4 +2,11 @@
   .closer__links {
     text-align: center;
   }
+
+  .break {
+    @include small-and-down {
+      display: block;
+      margin: .5rem;
+    }
+  }
 }

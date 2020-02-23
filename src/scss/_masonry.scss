@@ -10,6 +10,10 @@
     @include medium-and-down {
       width: 50%;
     }
+
+    @include small-and-down {
+      width: 100%;
+    }
   }
 
   .masonry__item {
@@ -29,6 +33,10 @@
       height: calc(100% - 0rem);
       transition: width 0.4s, height 0.4s, box-shadow 50ms ease-in-out 20ms;
       overflow: hidden;
+
+      @include small-and-down {
+        width: 100%;
+      }
 
       &:hover {
         cursor: pointer;
@@ -79,8 +87,6 @@
         flex-flow: column;
         overflow: hidden;
 
-        // opacity: .2;
-
         &--title {
           font-weight: 500;
           padding-top: .75rem;
@@ -115,13 +121,12 @@
   height: 400px;
   z-index: 2;
 
-    @include medium-and-down {
-      width: 100%;
-    }
+  @include medium-and-down {
+    width: 100%;
+  }
 
   .masonry__item--content {
     transition: width 0.4s, height 0.4s;
-
 
     &:hover {
       cursor: default;
@@ -138,6 +143,10 @@
 
         &.slide__image-full {
           transform: scale(1.1);
+        }
+
+        @include small-and-down {
+          display: none;
         }
       }
 
@@ -162,6 +171,14 @@
         padding-left: 2.5rem;
         border-left: 1px solid #f2f2f2;
 
+        @include small-and-down {
+          position: initial;
+          height: initial;
+          width: 100%;
+          padding-left: 0;
+          border-left: 0;
+        }
+
         &--title {
           font-weight: 500;
         }
@@ -185,6 +202,9 @@
           right: 2px;
           text-align: right;
           padding-left: 1.5rem;
+
+          @include small-and-down {
+          }
         }
       }
     }

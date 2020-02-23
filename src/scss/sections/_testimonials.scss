@@ -4,11 +4,16 @@
   .testimonials__content {
     margin-bottom: 6rem;
 
+    @include small-and-down {
+      margin-bottom: 3rem;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
 
     &--profile {
+      margin-top: 1.5rem;
 
       img {
         border-radius: 100px;

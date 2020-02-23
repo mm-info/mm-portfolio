@@ -831,6 +831,12 @@
 }
 
 // Action chevrons
+.lg-actions {
+  @include small-and-down {
+    display: none;
+  }
+}
+
 .lg-actions .lg-next,
 .lg-actions .lg-prev {
     color: rgba(255,255,255,1);
@@ -1088,6 +1094,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-radius: 20px;
   overflow: hidden;
   margin-top: 7%;
+
+  @include small-and-down {
+    border-radius: 0;
+    border: 0;
+  }
 }
 
 .lg-outer .lg-thumb-outer {
@@ -2240,6 +2251,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: calc(75% - 42px);
     max-width: 1100px;
 
+    @include small-and-down {
+      width: 100vw;
+    }
+
   .caption-container {
     text-align: left;
     margin: 0 auto;
@@ -2296,6 +2311,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     vertical-align: middle;
     padding: 8px 16px;
     margin: 0 16px;
+
+    @include small-and-down {
+      padding: 8px 0;
+    }
   }
 
   .lg-icon.lg-close {
@@ -2306,6 +2325,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     opacity: .2;
     font-size: 36px;
     transition: all 250ms ease 0ms;
+
+    @include small-and-down {
+      bottom: 3rem;
+      top: initial;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100vw;
+    }
 
     &:hover {
       opacity: 1;

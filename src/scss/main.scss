@@ -33,83 +33,83 @@ body {
 .mobile-placeholder {
   display: none;
 }
-
-@include small-and-down {
-  main,
-  .hero {
-    display: none;
-  }
-
-  .mobile-placeholder {
-    display: block;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-
-    .container {
-      margin-top: 10vh;
-      text-align: center;
-
-      .note-pic {
-        display: block;
-        max-width: 200px;
-        width: 200px;
-        height: 200px;
-        border-radius: 1000px;
-        overflow: hidden;
-        background-image: url('/dist/images/profile.jpg');
-        background-color: $black;
-        border: 8px solid $black;
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-        margin: 2rem auto;
-      }
-
-      p {
-        margin-bottom: .5rem;
-      }
-
-      .note-header {
-        font-family: courier;
-        margin: 1rem;
-      }
-
-      .note-or {
-        font-family: courier;
-        font-weight: bold;
-        font-style: italic;
-        margin: 0rem;
-      }
-
-      a.button {
-        padding: 1rem;
-        font-size: 1rem;
-        font-family: courier;
-        color: #000;
-        border: 1px dashed #000;
-      }
-
-      .note-date {
-        font-family: courier;
-        font-weight: bold;
-      }
-
-      .name {
-        margin-top: 2rem;
-        font-family: courier;
-        font-style: italic;
-      }
-
-      .button {
-        &:hover,
-        &:active,
-        &:focus {
-          background: #000;
-          color:  #fff;
-        }
-      }
-    }
-  }
-}
+//
+// @include small-and-down {
+//   main,
+//   .hero {
+//     display: none;
+//   }
+//
+//   .mobile-placeholder {
+//     display: block;
+//     position: fixed;
+//     height: 100vh;
+//     width: 100vw;
+//
+//     .container {
+//       margin-top: 10vh;
+//       text-align: center;
+//
+//       .note-pic {
+//         display: block;
+//         max-width: 200px;
+//         width: 200px;
+//         height: 200px;
+//         border-radius: 1000px;
+//         overflow: hidden;
+//         background-image: url('/dist/images/profile.jpg');
+//         background-color: $black;
+//         border: 8px solid $black;
+//         background-position: center;
+//         background-size: 100%;
+//         background-repeat: no-repeat;
+//         z-index: 1;
+//         margin: 2rem auto;
+//       }
+//
+//       p {
+//         margin-bottom: .5rem;
+//       }
+//
+//       .note-header {
+//         font-family: courier;
+//         margin: 1rem;
+//       }
+//
+//       .note-or {
+//         font-family: courier;
+//         font-weight: bold;
+//         font-style: italic;
+//         margin: 0rem;
+//       }
+//
+//       a.button {
+//         padding: 1rem;
+//         font-size: 1rem;
+//         font-family: courier;
+//         color: #000;
+//         border: 1px dashed #000;
+//       }
+//
+//       .note-date {
+//         font-family: courier;
+//         font-weight: bold;
+//       }
+//
+//       .name {
+//         margin-top: 2rem;
+//         font-family: courier;
+//         font-style: italic;
+//       }
+//
+//       .button {
+//         &:hover,
+//         &:active,
+//         &:focus {
+//           background: #000;
+//           color:  #fff;
+//         }
+//       }
+//     }
+//   }
+// }

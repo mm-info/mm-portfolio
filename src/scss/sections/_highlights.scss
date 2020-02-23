@@ -111,6 +111,16 @@
           }
         }
       }
+
+      @include small-and-down {
+        margin: .5rem 0 !important;
+
+        .highlights-copy {
+          min-height: initial !important;
+          margin-bottom: 1.5rem;
+        }
+
+      }
     }
   }
 }

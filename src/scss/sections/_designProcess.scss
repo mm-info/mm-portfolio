@@ -12,6 +12,15 @@
     background: red !important;
   }
 
+  header {
+
+    h2 {
+      @include small-and-down {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
   &__hero {
 
     &--image {
@@ -20,11 +29,16 @@
       width: 100%;
       position: relative;
 
+      @include small-and-down {
+        max-width: 250px;
+      }
+
       img {
         width: 100%;
         position: relative;
         z-index: 1;
       }
+
       .video-crop {
         position: absolute;
         z-index: 0;
@@ -36,12 +50,25 @@
         overflow: hidden;
         width: calc(100% - 54px);
 
+        @include small-and-down {
+          top: 8px;
+          left: 8px;
+          height: 140px;
+          width: 230px;
+        }
+
         video {
           transform-origin: center;
           position: relative;
           top: -152px;
           left: -235px;
           width: 180%;
+
+          @include small-and-down {
+            top: -32px;
+            left: -64px;
+            width: 170%;
+          }
         }
       }
     }
@@ -71,6 +98,10 @@
         @include medium-and-down {
           font-size: 18px;
         }
+
+        @include small-and-down {
+          margin-bottom: .5rem;
+        }
       }
     }
 
@@ -91,7 +122,6 @@
     font-weight: $light;
     font-size: 1.125rem;
     line-height: 167%;
-
     border: 0;
     outline: none;
     padding: 1rem;
@@ -99,6 +129,10 @@
     margin: 1.5rem auto;
     display: block;
     position: relative;
+
+    @include small-and-down {
+      font-size: 1rem;
+    }
 
     .icon-chevron {
       top: 2px;
@@ -135,6 +169,10 @@
 .designProcess__revealed {
   background: $white;
 
+  @include small-and-down {
+    padding: 0 2rem;
+  }
+
   &.revealed {
     display: block;
   }
@@ -153,6 +191,10 @@
 
       margin-right: 3.5rem;
       margin-bottom: 1rem;
+
+      @include small-and-down {
+        margin-right: 0;
+      }
     }
   }
 
@@ -184,6 +226,14 @@
             margin-left: 0;
           }
         }
+
+
+        h4 {
+          @include small-and-down {
+            text-align: center;
+            margin: 0rem 0 1.5rem 0;
+          }
+        }
       }
 
       .gallery {
@@ -191,6 +241,11 @@
 
         iframe {
           width: 100%;
+
+          @include small-and-down {
+            height: 12.5rem;;
+            margin-top: 1.5rem;
+          }
         }
       }
     }
@@ -213,9 +268,11 @@
       p {
         margin-left: 3.5rem;
         margin-right: 0;
+
+        @include small-and-down {
+          margin-left: 0;
+        }
       }
-
-
     }
   }
 
@@ -229,6 +286,11 @@
 
     @include medium-and-down {
       background-size: 160%;
+    }
+
+    @include small-and-down {
+      background-image: none;
+      background-color: #01bcf3;
     }
 
     .designProcess__revealed--title {

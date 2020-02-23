@@ -12,6 +12,16 @@
     li {
       flex: 1 0 auto;
       margin: 1rem;
+
+      @include small-and-down {
+        max-width: 150px;
+        margin: .5rem;
+        
+        img {
+          width: auto;
+          max-height: 30px;
+        }
+      }
     }
   }
 }
