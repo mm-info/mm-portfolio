@@ -1,0 +1,90 @@
+
+
+// Pagination
+ul.pagination {
+  margin: .75rem 0 0 0;
+  padding: 0;
+
+  li {
+    margin: 0 .25rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 100px;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    z-index: 99;
+    transition: all 0.5s linear 0s;
+    margin-top: .5rem;
+    border: 1px solid $medium-grey;
+
+    &.active {
+      transform: scale(1.1);
+      background-color: $medium-grey;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $medium-grey;
+      transition: all 0.5s linear 0s;
+    }
+  }
+}
+
+
+
+// Icon: Chevron
+i.icon-chevron {
+  position: relative;
+  left: 4px;
+  top: 2px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229.38%22%20height%3D%2216%22%20viewBox%3D%220%200%209.38%2016%22%3E%3Ctitle%3EGroup%2015%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.71.44c.57.56%2C6.21%2C6.47%2C6.21%2C6.47a1.58%2C1.58%2C0%2C0%2C1%2C.34.5%2C1.51%2C1.51%2C0%2C0%2C1%2C0%2C1.18%2C1.58%2C1.58%2C0%2C0%2C1-.34.5S6.28%2C15%2C5.71%2C15.56a1.64%2C1.64%2C0%2C0%2C1-2.23%2C0%2C1.46%2C1.46%2C0%2C0%2C1%2C0-2.17L8.65%2C8%2C3.48%2C2.61a1.46%2C1.46%2C0%2C0%2C1%2C0-2.17A1.64%2C1.64%2C0%2C0%2C1%2C5.71.44Z%22%20transform%3D%22translate%28-3%200%29%22%20fill%3D%22%230066cc%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1rem;
+  width: 1rem;
+  transition: all .2s ease-in-out;
+
+  &.icon-chevron_white {
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229.38%22%20height%3D%2216%22%20viewBox%3D%220%200%209.38%2016%22%3E%3Ctitle%3EGroup%2015%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.71.44c.57.56%2C6.21%2C6.47%2C6.21%2C6.47a1.58%2C1.58%2C0%2C0%2C1%2C.34.5%2C1.51%2C1.51%2C0%2C0%2C1%2C0%2C1.18%2C1.58%2C1.58%2C0%2C0%2C1-.34.5S6.28%2C15%2C5.71%2C15.56a1.64%2C1.64%2C0%2C0%2C1-2.23%2C0%2C1.46%2C1.46%2C0%2C0%2C1%2C0-2.17L8.65%2C8%2C3.48%2C2.61a1.46%2C1.46%2C0%2C0%2C1%2C0-2.17A1.64%2C1.64%2C0%2C0%2C1%2C5.71.44Z%22%20transform%3D%22translate%28-3%200%29%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+    transition: all .2s ease-in-out;
+  }
+}
+
+
+// Buttons
+.button {
+  display: block;
+  text-decoration: none;
+  color: $bright-blue;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  display: inline-block;
+  font-weight: 300;
+  border: 1px solid $bright-blue;
+  margin: 1rem 1rem;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+
+
+  &:hover {
+    color: $white;
+    background: $bright-blue;
+  }
+
+  &.button-md {
+    margin: .5rem 0;
+      padding: .75rem 1rem;
+    font-size: 1rem;
+  }
+
+  &.button-alt {
+    color: #fff;
+    border-color: #fff;
+  }
+}

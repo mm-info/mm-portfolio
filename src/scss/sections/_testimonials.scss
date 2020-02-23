@@ -1,0 +1,42 @@
+.section.testimonials {
+  background: $white;
+
+  .testimonials__content {
+    margin-bottom: 6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--profile {
+
+      img {
+        border-radius: 100px;
+        width:  96px;
+        height: 96px;
+        display: block;
+        margin: 0rem auto 1rem;
+      }
+    }
+
+    &--quote {
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: lighter;
+      }
+    }
+
+    &--credentials {
+      text-align: center;
+
+      .credentials-name {
+        font-weight: $medium;
+      }
+
+      .credentials-company {
+        font-size: 14px;
+      }
+    }
+  }
+}

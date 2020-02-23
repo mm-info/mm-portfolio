@@ -1,0 +1,293 @@
+
+// Design process teaser container
+.designProcess {
+  background: $white;
+
+  .section__column {
+    padding-bottom: 2rem;
+  }
+
+  &__column {
+    padding-bottom: 3rem;
+    background: red !important;
+  }
+
+  &__hero {
+
+    &--image {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+      .video-crop {
+        position: absolute;
+        z-index: 0;
+        top: 30px;
+        right: 0;
+        left: 21px;
+        bottom: 0;
+        height: calc(100% - 203px);
+        overflow: hidden;
+        width: calc(100% - 54px);
+
+        video {
+          transform-origin: center;
+          position: relative;
+          top: -152px;
+          left: -235px;
+          width: 180%;
+        }
+      }
+    }
+  }
+
+  &__teaser {
+    padding-top: 2.5rem;
+
+    @include medium-and-down {
+      align-items: flex-start;
+    }
+
+    &--title {
+      h3 {
+        text-align: left;
+        margin-bottom: .25rem;
+
+        @include medium-and-down {
+          font-size: 18px;
+          margin-top: .25rem;
+        }
+      }
+
+      p {
+        color: $dark-grey;
+
+        @include medium-and-down {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &--copy {
+      p {
+        font-weight: 300;
+
+        @include medium-and-down {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // Button to reveal design process content
+  button.designProcess-reveal {
+    color: $blue;
+    font-weight: $light;
+    font-size: 1.125rem;
+    line-height: 167%;
+
+    border: 0;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    margin: 1.5rem auto;
+    display: block;
+    position: relative;
+
+    .icon-chevron {
+      top: 2px;
+      left: 6px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .icon-chevron {
+        left: 10px;
+        transform: scale(1.1);
+      }
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 0;
+    }
+
+    &.designProcess-revealing {
+      .icon-chevron {
+        top: 5px;
+        left: 8px;
+        transform: scale(1.1);
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+// Design process details after reveal
+.designProcess__revealed {
+  background: $white;
+
+  &.revealed {
+    display: block;
+  }
+
+  // Full case study details, revealed
+  &--title {
+    h4 {
+      text-align: left;
+      margin-bottom: .5rem;
+    }
+
+    p {
+      color: $black;
+      font-size: 16px;
+      line-height: 27px;
+
+      margin-right: 3.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &--imagery {
+
+    .gallery {
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // Case study panel details: Solution
+  &.designProcess__revealed-solution {
+    background: #01bcf3;
+    padding: 0 2rem;
+    .section__column {
+
+      .designProcess__revealed--title {
+        h4,
+        p {
+          margin-left: 3.5rem;
+          margin-right: 0;
+          color: $white;
+
+          @include medium-and-down {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .gallery {
+        margin-top: -1rem;
+
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Case study panel details: Customer
+  &.designProcess__revealed-customer {
+
+  }
+
+  // Case study panel details: Associate
+  &.designProcess__revealed-associate {
+
+    .section__column {
+      padding-top: 3rem;
+    }
+
+    .designProcess__revealed--title {
+      h4,
+      p {
+        margin-left: 3.5rem;
+        margin-right: 0;
+      }
+
+
+    }
+  }
+
+
+  // Case study panel details: Print
+  &.designProcess__revealed-print {
+    background: url('../images/casestudy/casestudy-booklet-sm.jpg');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    @include medium-and-down {
+      background-size: 160%;
+    }
+
+    .designProcess__revealed--title {
+
+      h4, p {
+        color: $white;
+      }
+
+      .button {
+        margin-top: 3rem;
+
+        i.icon-chevron {
+          top: 3px;
+          left: 4px;
+          margin-left: 4px;
+        }
+
+        &:hover {
+          border-color: #fff;
+          background: #fff;
+          color: #02aee0;
+
+          i.icon-chevron {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229.38%22%20height%3D%2216%22%20viewBox%3D%220%200%209.38%2016%22%3E%3Ctitle%3EGroup%2015%3C%2Ftitle%3E%3Cpath%20d%3D%22M5.71.44c.57.56%2C6.21%2C6.47%2C6.21%2C6.47a1.58%2C1.58%2C0%2C0%2C1%2C.34.5%2C1.51%2C1.51%2C0%2C0%2C1%2C0%2C1.18%2C1.58%2C1.58%2C0%2C0%2C1-.34.5S6.28%2C15%2C5.71%2C15.56a1.64%2C1.64%2C0%2C0%2C1-2.23%2C0%2C1.46%2C1.46%2C0%2C0%2C1%2C0-2.17L8.65%2C8%2C3.48%2C2.61a1.46%2C1.46%2C0%2C0%2C1%2C0-2.17A1.64%2C1.64%2C0%2C0%2C1%2C5.71.44Z%22%20transform%3D%22translate%28-3%200%29%22%20fill%3D%22%2302aee0%22%2F%3E%3C%2Fsvg%3E");
+          }
+        }
+      }
+    }
+
+    .designProcess__revealed--imagery {
+      height: 250px;
+
+      @include medium-and-down {
+        height: initial;
+      }
+
+      #casestudy-gallery-0 {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.gallery {
+
+  .gallery__image {
+    display: none;
+
+    &.gallery__image-active {
+      display: block;
+    }
+  }
+
+  .gallery__thumbnail {
+
+  }
+
+  .gallery__fullSize {
+
+  }
+}

@@ -1,0 +1,28 @@
+footer.footer {
+  padding: 5rem 0;
+  text-align: center;
+
+  .footer-info {
+    color: #bfbfbf;
+    font-size: .8125rem;
+    font-weight: 300;
+  }
+
+  .footer-links {
+
+    a {
+      opacity: .5;
+
+      img {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin: 1rem .325rem;
+      }
+
+      &:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+}

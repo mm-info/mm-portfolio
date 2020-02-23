@@ -1,0 +1,86 @@
+.hero {
+  background: $white;
+  padding: 5rem 0;
+
+  @include medium-and-down {
+    padding: 2.5rem 0;
+  }
+
+  .section__column {
+    justify-content: center;
+
+    .Grid-cell__10of12 {
+      max-width: 56.25rem;
+    }
+
+    header {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 4rem 0;
+      max-width: 768px;
+
+      .profile-picture {
+        flex: 1 0 auto;
+        max-width: 20rem;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 1000px;
+        overflow: hidden;
+        background-image: url('/dist/images/profile.jpg');
+        background-color: $black;
+        border: 8px solid $black;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+
+      .profile-copy {
+        flex: 1 0 auto;
+        align-self: center;
+        padding-left: 3.5rem;
+        position: relative;
+
+        h1 {
+          margin: 0;
+          text-align: left;
+          font-size: 3rem;
+          font-weight: $bold;
+          color: $black;
+          margin-bottom: .5rem;
+        }
+
+        // .rule {
+        //   background: $black;
+        //   height: .5rem;
+        //   width: calc(100% + 5rem);
+        //   display: block;
+        //   position: relative;
+        //   left: -6.25rem;
+        //   z-index: 0;
+        //   margin-bottom: .5rem;
+        //
+        //   &::after {
+        //     content: '';
+        //     position: absolute;
+        //     right: -1rem;
+        //     background: $black;
+        //     height: 2rem;
+        //     width: 2rem;
+        //     border-radius: 100px;
+        //     top: -.75rem;
+        //   }
+        // }
+
+        h2 {
+          margin: 0;
+          text-align: left;
+          font-size: 1.5rem;
+          line-height: 1.6;
+          font-weight: $light;
+          color: $black;
+        }
+      }
+    }
+  }
+}

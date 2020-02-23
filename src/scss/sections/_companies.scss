@@ -1,0 +1,17 @@
+.section.companies {
+  background: $white;
+
+  .companies__list {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 0 auto;
+      margin: 1rem;
+    }
+  }
+}

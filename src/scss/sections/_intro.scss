@@ -1,0 +1,26 @@
+.intro {
+  background: $bright-blue;
+  color: $white;
+  text-align: left;
+  padding-bottom: 0rem;
+
+  header {
+    align-items: center;
+
+    h1 {
+      color: $white;
+      text-align: left;
+    }
+  }
+
+  &__copy {
+    margin-bottom: 6rem;
+
+    p {
+      color: $white;
+      margin-bottom: 2rem;
+      font-size: 1.25rem
+
+    }
+  }
+}

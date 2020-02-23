@@ -1,0 +1,111 @@
+// Vertical Align Mixin (relative)
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+// Breakpoints
+@mixin medium-and-down {
+  @media ( max-width: 999px ) {
+    @content;
+  }
+}
+
+@mixin small-and-down {
+  @media ( max-width: 768px ) {
+    @content;
+  }
+}
+
+
+// Blur content
+body.blur {
+
+  .designProcess__revealed--imagery .gallery{opacity: .03;}
+
+  .section {
+    .profile-picture {
+      background-image: url('http://placehold.it/300x300/dddddd/d2d2d2/') !important;
+    }
+
+    .designProcess__hero--image {
+      opacity: .03;
+      border: 1px solid #000;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: transparent !important;
+      text-shadow: 0 0 11px rgba(50,50,50,0.5) !important;
+    }
+
+    p {
+      color: transparent !important;
+      text-shadow: 2px 4px 4px rgba(50,50,50,0.5) !important;
+    }
+
+    &.hero {
+      opacity: .2 !important;
+    }
+
+    &.intro {
+      background: #ccc !important;
+
+    }
+
+    .content-slider img {
+      opacity: .25;
+      // background-color: #ccc;
+    }
+
+    &.designProcess__revealed.designProcess__revealed-print {
+      background-image: none;
+      background-color: #efefef;
+
+    }
+
+    &.designProcess__revealed.designProcess__revealed-associate {
+      background-color: #efefef;
+    }
+
+    .companies__list {
+      li {
+        border: 1px solid #efefef;
+
+        img {
+          opacity: .02;
+        }
+      }
+    }
+
+    .button {
+      // color: transparent !important;
+      text-shadow: 2px 4px 8px rgba(50,50,50,0.5) !important;
+      border-color: #efefef;
+
+      a {
+        color: transparent !important;
+        text-shadow: 2px 4px 8px rgba(50,50,50,0.5) !important;
+      }
+    }
+  }
+
+  .masonry .masonry__item .masonry__item--content {
+    .slide .slide__label p {
+    }
+
+    .slide__image {
+      background-image: url('http://placehold.it/1000x900/dddddd/d2d2d2/') !important;
+    }
+  }
+
+
+}

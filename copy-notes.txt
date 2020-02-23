@@ -1,0 +1,70 @@
+Intro
+The Microsoft Azure team approached Indigo Slate in need of a solution to communicate more directly with their customers. They wanted a way for a sales person to be able to create a unique site for a customer and then track how that experience is being used.
+
+
+The solution
+  I was proud to deliver an application that was built for sales persons to deliver curated sites to potential customers.
+
+  The sales person could not only create the curated sites, but also had access to an administrative dashboard where each site's usage analytics could be monitored.
+
+  The customer received access to the portals, with a filterable grid that allows them to explore content that shows off features, benefits and how other companies are utilizing Azure.
+
+
+
+Making it easy to learn
+<p class="large">In addition to the web application, a printed and bound 25 page user manual was provided.</p>
+<p class="large">This booklet provided the sales person with documentation, as well as marketing material for client presentations.</p>
+
+  View samples of booklet >
+
+
+Built for the customer
+Customers received a dynamic experience that was full of informative material in video, print, and interactive formats.
+The design of the dashboard was a collapsable grid with filters, providing quick access to the site content sections.
+
+
+Built for the associate
+  Sales associates had access to a fully interactive dashboard with widgets displaying live analytics, site engagement numbers, and user journey logs.
+
+  The dashboard also hosted the tool that associates would use to build the custom sites, selecting from a database full of content.
+
+
+
+
+
+
+Associate:
+  Site status monitoring
+  Lists of all sites that an associate had created, each of which could be cloned, destroyed, paused, and modified.
+
+  User Analytics
+  Interactive dashboard where associates could see engagement scores, performance logs, site visits, and user journey completion rates
+
+
+Customer:
+  Portal Dashboard
+  An interactive home screen laid out in a filterable grid that provided quick access to educational material, case studies, and feature demonstrations.
+
+  Educational material
+  A resource hub where customers could learn about Microsoft Azure basics through downloadable video material and informative documentation.
+
+  Mobile designs
+  The portal was designed to provide a consistent experience that provided the same content across all devices.
+
+  Case studies
+  Each portal delivered specific case studies catered towards the given customer.
+
+  Tutorials
+  Informative video series that guided users through different features of the Azure dashboard.
+
+
+
+Book:
+  Administrative documentation
+  Section that provides a summary and description of each administrative feature of the application.
+
+  Application overview
+  Explanation of the tool's benefits, and how to work with customers to deliver the ideal user experience.
+
+  Customer dashboard documentation
+  Section that explains what the user's experience will be, and how they can interact with the dashboard.
