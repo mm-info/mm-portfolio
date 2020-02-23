@@ -47,7 +47,7 @@ body {
     width: 100vw;
 
     .container {
-      @include vertical-align();
+      margin-top: 10vh;
       text-align: center;
 
       .note-pic {
@@ -78,6 +78,8 @@ body {
 
       .note-or {
         font-family: courier;
+        font-weight: bold;
+        font-style: italic;
         margin: 0rem;
       }
 
