@@ -1058,14 +1058,14 @@
 }
 
 .lg-hide-items .lg-prev {
-  opacity: 0;
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
+  // opacity: 0;
+  // -webkit-transform: translate3d(-10px, 0, 0);
+  // transform: translate3d(-10px, 0, 0);
 }
 .lg-hide-items .lg-next {
-  opacity: 0;
-  -webkit-transform: translate3d(10px, 0, 0);
-  transform: translate3d(10px, 0, 0);
+  // opacity: 0;
+  // -webkit-transform: translate3d(10px, 0, 0);
+  // transform: translate3d(10px, 0, 0);
 }
 .lg-hide-items .lg-toolbar {
   // opacity: 0;
@@ -2319,10 +2319,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .lg-icon.lg-close {
     position: fixed;
-    top: .5rem;
-    right: .5rem;
+    top: .75rem;
+    right: .75rem;
     color: #fff;
-    opacity: .2;
+    opacity: .5;
     font-size: 36px;
     transition: all 250ms ease 0ms;
 

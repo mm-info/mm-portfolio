@@ -1,13 +1,5 @@
 (function () {
 
-// Reveal toggle
-$('.designProcess-reveal').click(function(){
-    $(this).toggleClass('designProcess-revealing');
-    $('.designProcess__revealed').slideToggle();
-});
-
-
-
 // Grid material
 var $grid = $('.masonry').masonry({
   itemSelector: '.masonry__item',
