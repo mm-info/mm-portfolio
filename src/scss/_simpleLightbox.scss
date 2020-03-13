@@ -2340,3 +2340,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     }
   }
 }
+
+@include small-and-down {
+  body.lg-on {
+    overflow: hidden;
+  }
+}
