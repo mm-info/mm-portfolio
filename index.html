@@ -332,6 +332,43 @@
               <div class="masonry__sizer"></div>
 
               <div class="masonry__item is-expanded">
+                <div class="masonry__item--content masonry__item--content-0">
+
+                  <div class="slide">
+                    <div class="slide__image"></div>
+                    <div class="slide__label">
+                      <p class="slide__label--title">Design Pattern Library</p>
+                      <p class="slide__label--tags">Pattern library, Figma, UI Design, SCSS, Javascript</p>
+                    </div>
+                    <div class="slide__description">
+                      <p class="slide__description--title medium">Design Pattern Library</p>
+                      <p class="slide__description--subtitle small">Software Advice, 2019</p>
+                      <p class="slide__description--copy">A pattern library that provided visual design assets and re-usable code snippets to provide a consistent user interface.</p>
+
+                      <span class="otherWork-links-shell">
+                        <a class="otherWork-links" id="otherwork-DPL">
+                          View examples <i class="icon-chevron"></i>
+                        </a>
+                      </span>
+
+                      <p class="slide__description--tags small">Pattern library, Design system, UI Design, Figma, SCSS, Angular, Javascript</p>
+
+                      <ul class="content-slider" id="otherwork-DPL-0">
+                        <li data-src="dist/images/otherWork/otherWork-DPL--0.png"
+                            data-sub-html="<div class='caption-container'><p class='caption-title'>Visual Assets in Figma</p><p class='caption-copy'>Introducing a New User On-boarding experience presented a creative challenge, which resulted in presenting research laying out industry trends and proposed approaches.
+                            On the visual side, this project was maintained as a Figma library, which allowed for easy collaboration and version control.</p></div>">
+                        </li>
+                        <li data-src="dist/images/otherWork/otherWork-DPL--1.jpg"
+                            data-sub-html="<div class='caption-container'><p class='caption-title'>Web Component Library</p><p class='caption-copy'>I wrote the HTML, SCSS, and Javascript code, as well as thorough documentation to provide engineers with the easily accessible code snippets that could be placed within the application built using AngularJS.</p></div>">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="masonry__item">
                 <div class="masonry__item--content masonry__item--content-1">
 
                   <div class="slide">
@@ -659,7 +696,7 @@
           <div class="closer__links Grid-cell Grid-cell__10of12">
             <a class="button" href="mailto:matt@mattmichaels.info">Shoot an email</a>
             <span class="break">or</span>
-            <a class="button" href="Matt-Michaels_Resume_2020.pdf">Download my resume</a></h2>
+            <a class="button" href="Matt-Michaels_Resume_2020.pdf" target="_blank">Download my resume</a></h2>
           </div>
           <div class="Grid-cell Grid-cell__3of12"></div>
         </div>
@@ -693,138 +730,7 @@
   <script src="dist/js/lightGallery.all.js"></script>
   <script src="dist/js/app.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-
-    $('#otherwork-scheduler').on('click', function() {
-       $('#otherwork-scheduler-0 .lslide').trigger('click');
-    });
-
-
-    $('#otherwork-scheduler-0').lightSlider({
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              // selector: '#casestudy-gallery-0 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-    $('#otherwork-filtering').on('click', function() {
-       $('#otherwork-filtering-0 .lslide').trigger('click');
-    });
-
-
-    $('#otherwork-filtering-0').lightSlider({
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              // selector: '#casestudy-gallery-0 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-    $('#otherwork-onboarding').on('click', function() {
-       $('#otherwork-onboarding-0 .lslide').trigger('click');
-    });
-
-
-    $('#otherwork-onboarding-0').lightSlider({
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              // selector: '#casestudy-gallery-0 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-    $('#otherwork-nintex').on('click', function() {
-       $('#otherwork-nintex-0 .lslide').trigger('click');
-    });
-
-
-    $('#otherwork-nintex-0').lightSlider({
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              // selector: '#casestudy-gallery-0 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-
-    $('#gallery-book').on('click', function() {
-       $('#casestudy-gallery-0 .lslide').trigger('click');
-    });
-
-
-    $('#casestudy-gallery-0').lightSlider({
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              selector: '#casestudy-gallery-0 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-    $('#casestudy-gallery-1').lightSlider({
-      gallery:false,
-      item:1,
-      loop:true,
-      thumbItem:3,
-      slideMargin:0,
-      enableDrag: false,
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              selector: '#casestudy-gallery-1 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-
-    $('#casestudy-gallery-2').lightSlider({
-      gallery:false,
-      item:1,
-      loop:true,
-      thumbItem:3,
-      slideMargin:0,
-      enableDrag: false,
-
-      onSliderLoad: function(el) {
-          el.lightGallery({
-              selector: '#casestudy-gallery-2 .lslide',
-              mode: 'lg-fade',
-              download: false,
-              thumbnail: false,
-              width: "75%",
-          });
-        }
-    });
-  });
-</script>
+  <script>$(document).ready(function() {$('#otherwork-scheduler').on('click', function() {$('#otherwork-scheduler-0 .lslide').trigger('click');});$('#otherwork-scheduler-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#otherwork-DPL').on('click', function() {$('#otherwork-DPL-0 .lslide').trigger('click');});$('#otherwork-DPL-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#otherwork-filtering').on('click', function() {$('#otherwork-filtering-0 .lslide').trigger('click');});$('#otherwork-filtering-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#otherwork-onboarding').on('click', function() {$('#otherwork-onboarding-0 .lslide').trigger('click');});$('#otherwork-onboarding-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#otherwork-nintex').on('click', function() {$('#otherwork-nintex-0 .lslide').trigger('click');});$('#otherwork-nintex-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#gallery-book').on('click', function() {$('#casestudy-gallery-0 .lslide').trigger('click');});$('#casestudy-gallery-0').lightSlider({onSliderLoad: function(el) {el.lightGallery({selector: '#casestudy-gallery-0 .lslide',mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#casestudy-gallery-1').lightSlider({gallery:false,item:1,loop:true,thumbItem:3,slideMargin:0,enableDrag: false,onSliderLoad: function(el) {el.lightGallery({selector: '#casestudy-gallery-1 .lslide',mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});$('#casestudy-gallery-2').lightSlider({gallery:false,item:1,loop:true,thumbItem:3,slideMargin:0,enableDrag: false,onSliderLoad: function(el) {el.lightGallery({selector: '#casestudy-gallery-2 .lslide',mode: 'lg-fade',download: false,thumbnail: false,width: "75%",});}});});</script>
 
 </body>
 </html>
