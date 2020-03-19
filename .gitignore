@@ -59,4 +59,5 @@ typings/
 
 # Hubot stuff
 .DS_Store*
+.DS_Store
 .hubot_history
