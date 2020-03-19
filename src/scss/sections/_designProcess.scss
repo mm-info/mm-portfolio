@@ -1,3 +1,28 @@
+.owl-dots {
+text-align: center;
+margin-top: .5rem;
+
+  .owl-dot {
+    background: transparent !important;
+    border: 1px solid #4177c8 !important;
+    width: 1em;
+    height: 1rem;
+    border-radius: 100px;
+    margin: 0 .25rem;
+
+    &.active {
+      background: #4177c8 !important;
+    }
+  }
+
+
+}
+
+
+
+
+
+
 
 // Design process teaser container
 .designProcess {

@@ -16,9 +16,9 @@
 @import 'sections/footer';
 
 // Tools
-@import 'simpleLightbox';
 @import 'masonry';
-@import 'reusables.scss';
+@import 'lightbox';
+@import 'reusables';
 
 * { box-sizing: border-box; }
 
