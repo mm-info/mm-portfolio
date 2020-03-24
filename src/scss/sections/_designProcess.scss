@@ -53,47 +53,10 @@ margin-top: .5rem;
       width: 100%;
       position: relative;
 
-      @include small-and-down {
-        max-width: 250px;
-      }
-
-      img {
+      img.dap-monitor {
         width: 100%;
         position: relative;
         z-index: 1;
-      }
-
-      .video-crop {
-        position: absolute;
-        z-index: 0;
-        top: 30px;
-        right: 0;
-        left: 21px;
-        bottom: 0;
-        height: calc(100% - 203px);
-        overflow: hidden;
-        width: calc(100% - 54px);
-
-        @include small-and-down {
-          top: 8px;
-          left: 8px;
-          height: 140px;
-          width: 230px;
-        }
-
-        video {
-          transform-origin: center;
-          position: relative;
-          top: -152px;
-          left: -235px;
-          width: 180%;
-
-          @include small-and-down {
-            top: -32px;
-            left: -64px;
-            width: 170%;
-          }
-        }
       }
     }
   }

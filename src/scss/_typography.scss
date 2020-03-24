@@ -104,3 +104,9 @@ button {
     border: 0;
   }
 }
+
+// Select highlights
+::selection {
+  background-color: red;
+  color: #fff;
+}
